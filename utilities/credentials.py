@@ -6,7 +6,7 @@ class Credentials:
         pass
 
     def __get_credentials(self, id):
-        with open('credentials.json', 'r') as file:
+        with open('utilities/credentials.json', 'r') as file:
             data = json.load(file)
             credentials = data['credentials']
             return credentials[id]
