@@ -1,7 +1,6 @@
-from cgitb import handler
 import logging
 
-def logger():
+def customLogger():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     handler = logging.StreamHandler()
